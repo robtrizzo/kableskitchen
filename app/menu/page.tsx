@@ -1,9 +1,15 @@
+import type { Metadata } from 'next';
 import Image from 'next/image';
 import { Edu_VIC_WA_NT_Beginner } from 'next/font/google';
 import Link from 'next/link';
 import { AutoplayCarousel } from '@/components/ui/autoplay-carousel';
 
 const edu_vic_wa_nt_beginner = Edu_VIC_WA_NT_Beginner({ subsets: ['latin'] });
+
+export const metadata: Metadata = {
+  title: "Menu - Kable's Kitchen",
+  description: 'Home-cooked meals made with love and quality ingredients',
+};
 
 export default async function Page() {
   return (
