@@ -63,28 +63,41 @@ export default function Home() {
             <h2
               className={`text-3xl text-red-900 font-semibold ${edu_vic_wa_nt_beginner.className}`}
             >
-              A message from Signora Kable Rizzo
+              Welcome to Kable’s Kitchen!
             </h2>
             <p className="mt-4">
-              Kable&#39;s Kitchen started as a hobby. Always cooking. Always
-              trying recipes from places we&#39;ve been fortunate to live (all
-              over the place with military). I loved the international foods /{' '}
-              flavors I was able to eat in my foreign friends&#39; homes, so am
-              trying to re-create some of that in addition to some family
-              favorites. Italy was a favorite location to live and eat every
-              day! And Bob Rizzo&#39;s Italian grandmother taught me culinary
-              tricks, so Italian cuisine is my go-to.
+              Kable&#39;s Kitchen started as a hobby. Always cooking and cooking
+              for others. I love to re-create flavors from meals I’ve eaten from
+              military travels, from international friends&#39; kitchens, and
+              from family recipes handed down.
             </p>
             <p className="mt-4">
-              I plan on keeping this small, so it is quality. Not quantity. It
-              is what our family puts on the table. There will be meat dishes
-              and some vegetarian and vegan ones.
+              Italy was a favorite location to live and eat every single day!
+              And Bob Rizzo&#39;s Italian grandmother taught me some of her
+              culinary tricks over the years. Asia was another place where I
+              spent some time in the army, and I discovered umami- yum! We lived
+              in Europe a few times, so a Mediterranean fusion-style of cooking
+              (throw in a little USA southern) is part of the style I enjoy
+              sharing with others through food.
+            </p>
+            <p className="mt-4">
+              I plan on keeping this small, so it is{' '}
+              <span className="font-bold underline">quality</span>. Not
+              quantity. Everything I cook is what we put on our table with fresh
+              ingredients and always locally sourced meats. There are non-meat
+              entrees, meat meals, and plant-based dishes. Cooking is my art
+              form and one of life’s greatest pleasures (aside from eating of
+              course).
             </p>
             <p className="mt-4">
               I look forward to sharing my passion for food/cooking from scratch
-              with you! If there&#39;s a shortcut, I don&#39;t take it! I prefer
-              cooking the old-fashioned way and using quality ingredients
-              sourced locally. The meat products are from Poly Face Farms.
+              with you! If there&#39;s a shortcut, I don&#39;t take it! Cooking
+              the old-fashioned way is my method.
+            </p>
+            <p className="mt-4">
+              The recipes are crafted by Signora Rizzo (that’s me). Signora
+              Rizzo was also Grandma Helen Rizzo who shared her Italian family’s
+              secret recipes with me!
             </p>
             <p className="mt-4">
               My goal is to provide affordable meals from scratch to busy people
@@ -94,7 +107,26 @@ export default function Home() {
             <p
               className={`mt-4 text-lg text-red-900 font-semibold ${edu_vic_wa_nt_beginner.className}`}
             >
-              Enjoy and Buon apetito!
+              Kable Rizzo (Signora Rizzo)
+            </p>
+            <p className="mt-4 flex items-end gap-1">
+              You can text me at{' '}
+              <Link href="tel:5404163450">
+                <p className="font-semibold text-lg">(540)-416-3450</p>
+              </Link>
+            </p>
+            <p className="flex items-end gap-1">
+              Or email me at{' '}
+              <div className="underline text-blue-600 active:text-purple-600">
+                <Link href="mailto:kablerizzo@hotmail.com">
+                  kablerizzo@hotmail.com
+                </Link>
+              </div>
+            </p>
+            <p className="mt-4">
+              <span className="text-2xl text-red-900">*</span>Come pick up your
+              meals at 1031 Ridgemont Drive, Staunton, VA 24401 (by
+              appointment).
             </p>
           </div>
         </div>

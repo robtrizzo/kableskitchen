@@ -207,10 +207,10 @@ export default async function Page() {
             </p>
             <p>
               <b>Vegetable version:</b>
-              Lentils, carrots, celery, peas, onions, garlic, thyme, rosemary,
-              tomato paste, red wine, tahini, soy sauce, paprika, potatoes,
-              olive oil, coconut milk, nutritional yeast, vegan butter, balsamic
-              vinegar, salt, pepper.
+              Lentils, carrots, celery, peas, onions, potatoes, garlic, thyme,
+              rosemary, tomato paste, red wine, tahini, soy sauce, paprika,
+              olive oil, coconut milk, nutritional yeast, balsamic vinegar,
+              Worcestershire sauce, salt, pepper.
             </p>
           </div>
         </div>
