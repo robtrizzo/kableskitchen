@@ -14,24 +14,25 @@ export const metadata: Metadata = {
 export default async function Page() {
   return (
     <main className="flex min-h-screen flex-col items-center">
-      <Link href="/" className="p-24 pb-16">
-        <div className="flex items-center gap-4">
-          <Image
-            src="/kk.png"
-            alt="kableskitchen logo"
-            width={64}
-            height={64}
-          />
-          <h1
-            className={`text-5xl ${edu_vic_wa_nt_beginner.className} text-red-900 font-bold`}
-          >
-            Kable&apos;s Kitchen
-          </h1>
+      <div className="p-24 py-16">
+        <div className="flex items-center justify-center lg:justify-between lg:gap-16 flex-wrap">
+          <Link href="/">
+            <Image
+              src="/logo.png"
+              alt="kableskitchen logo"
+              width={300}
+              height={300}
+            />
+          </Link>
+          <div className="flex flex-col items-center lg:items-end justify-center gap-4 mt-6 lg:mt-0">
+            <p
+              className={`text-2xl ${edu_vic_wa_nt_beginner.className} text-lime-800 mt-2 text-center font-semibold italic`}
+            >
+              Serving delicious takeout in Staunton, Virginia
+            </p>
+          </div>
         </div>
-        <p className="mt-2 text-center font-semibold">
-          Serving delicious takeout in Staunton, Virginia
-        </p>
-      </Link>
+      </div>
       <div className="grid grid-cols-1 lg:grid-cols-2 w-full">
         <div className="bg-lime-800 p-24 flex items-center justify-center lg:rounded-tr-[160px]">
           <div className="max-w-[450px]">

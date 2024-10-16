@@ -26,32 +26,31 @@ const images = [
 export default function Home() {
   return (
     <main>
-      <div className="p-24 pb-16">
-        <div className="flex items-center justify-center gap-4">
+      <div className="p-24 py-16">
+        <div className="flex items-center justify-center lg:justify-between flex-wrap">
           <Image
-            src="/kk.png"
+            src="/logo.png"
             alt="kableskitchen logo"
-            width={64}
-            height={64}
+            width={300}
+            height={300}
           />
-          <h1
-            className={`text-5xl ${edu_vic_wa_nt_beginner.className} text-red-900 font-bold`}
-          >
-            Kable&apos;s Kitchen
-          </h1>
-        </div>
-        <p className="mt-2 text-center font-semibold">
-          Serving delicious takeout in Staunton, Virginia
-        </p>
-        <div className="mt-8 flex items-center justify-center">
-          <Link href="/menu">
-            <Button
-              variant="outline"
-              className="text-red-900 font-bold border-2 border-red-900 px-8"
+          <div className="flex flex-col items-center lg:items-end justify-center gap-4 mt-6 lg:mt-0">
+            <p
+              className={`text-2xl ${edu_vic_wa_nt_beginner.className} text-lime-800 mt-2 text-center font-semibold italic`}
             >
-              Menu
-            </Button>
-          </Link>
+              Serving delicious takeout in Staunton, Virginia
+            </p>
+            <div className="mt-8 flex items-center justify-center">
+              <Link href="/menu">
+                <Button
+                  variant="outline"
+                  className="text-red-900 font-bold border-2 border-red-900 px-8"
+                >
+                  Menu
+                </Button>
+              </Link>
+            </div>
+          </div>
         </div>
       </div>
       <div className="grid grid-cols-1 lg:grid-cols-2 w-full">
