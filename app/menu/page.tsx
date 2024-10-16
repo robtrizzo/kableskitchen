@@ -81,8 +81,8 @@ export default async function Page() {
               pepper, sugar.
             </p>
             <p>
-              <b>Meatballs:</b> Polyface farm beef and pork, eggs, bread,
-              parmesan cheese, salt, pepper, garlic, onion powder, salt, pepper,
+              <b>Meatballs:</b> Local farm beef and pork, eggs, bread, parmesan
+              cheese, salt, pepper, garlic, onion powder, salt, pepper,
               tomatoes, tomato paste, olive oil, sugar.
             </p>
           </div>
@@ -113,9 +113,9 @@ export default async function Page() {
               Only quality ingredients!!!!
             </p>
             <p>
-              Polyface farm beef and pork, eggs, bread, parmesan cheese, salt,
-              pepper, garlic, onion powder, salt, pepper, tomatoes, tomato
-              paste, olive oil, sugar.
+              Local beef and pork, eggs, bread, parmesan cheese, salt, pepper,
+              garlic, onion powder, salt, pepper, tomatoes, tomato paste, olive
+              oil, sugar.
             </p>
           </div>
         </div>
@@ -149,8 +149,8 @@ export default async function Page() {
               Signora Rizzo’s Chicken Pot Pie
             </h2>
             <p className="text-lg text-lime-800 mt-4 font-bold">
-              Flaky homemade pie crust, Polyface Farm chicken, and wholesome
-              vegetables, baked in a sherry cream sauce.
+              Flaky homemade pie crust, local chicken, and wholesome vegetables,
+              baked in a sherry cream sauce.
             </p>
             <p className="mt-4">
               <b>Directions:</b> Thaw. Bake uncovered at 400 degrees for 25
@@ -220,6 +220,145 @@ export default async function Page() {
           />
         </div>
         <div className="bg-lime-800 p-24 flex items-center justify-center">
+          <Image
+            src="/biscuit.png"
+            alt="lasagna"
+            width={450}
+            height={450}
+            className="rounded-lg"
+          />
+        </div>
+        <div className="bg-white lg:bg-lime-800">
+          <div className="p-24 bg-white lg:rounded-l-[160px] lg:h-full">
+            <h2
+              className={`text-3xl text-red-900 font-semibold ${edu_vic_wa_nt_beginner.className}`}
+            >
+              Signora Rizzo’s Fluffy Homemade Biscuits
+            </h2>
+            <p className="text-lg text-lime-800 mt-4 font-bold">
+              Fluffy, buttery biscuits that melt in your mouth. Hand rolled and
+              cut the old fashioned way.
+            </p>
+            <p className="mt-4">
+              <b>Directions:</b>
+              Store in freezer. Thaw and eat!
+            </p>
+            <p className="text-lg text-red-600 mt-4 font-bold">
+              Only quality ingredients!!!!
+            </p>
+            <p className="mt-2">
+              Flour, butter, yogurt, salt, eggs, baking powder, baking soda.
+            </p>
+          </div>
+        </div>
+        <div className="bg-white lg:bg-lime-800">
+          <div className="p-24 bg-white lg:rounded-r-[160px] lg:h-full">
+            <h2
+              className={`text-3xl text-red-900 font-semibold ${edu_vic_wa_nt_beginner.className}`}
+            >
+              Signora Rizzo’s Garlic Bratwurst cooked with Caramelized Onions
+            </h2>
+            <p className="text-lg mt-4 font-bold">
+              Flavorful garlic bratwurst from the farm, cooked with golden
+              caramelized onions. A perfect meat side dish.
+            </p>
+            <p className="mt-4">
+              <b>Directions:</b>
+              Thaw. Bake uncovered at 350 degrees for about 25-30 minutes. Or
+              put in microwave safe container and heat.
+            </p>
+            <p className="text-lg text-red-600 mt-4 font-bold">
+              Only quality ingredients!!!!
+            </p>
+            <p className="mt-2">
+              <b>Pure and simple:</b>
+              Local pork, garlic, salt, spices, extra virgin olive oil, sweet
+              onions.
+            </p>
+          </div>
+        </div>
+        <div className="bg-lime-800 p-24 flex items-center justify-center lg:rounded-r-[160px]">
+          <Image
+            src="/bratwurst.png"
+            alt="lasagna"
+            width={450}
+            height={450}
+            className="rounded-lg"
+          />
+        </div>
+        <div className="bg-lime-800 p-24 flex items-center justify-center">
+          <AutoplayCarousel
+            images={['/meatloaf.png', '/mash.png', '/greenbeans.png']}
+          />
+        </div>
+        <div className="bg-white lg:bg-lime-800">
+          <div className="p-24 bg-white lg:rounded-l-[160px] lg:h-full">
+            <h2
+              className={`text-3xl text-red-900 font-semibold ${edu_vic_wa_nt_beginner.className}`}
+            >
+              Signora Rizzo’s Virginia Meatloaf Meal
+            </h2>
+            <p className="text-lg text-lime-800 mt-4 font-bold">
+              *Moist, traditional meatloaf, buttery hand smashed potatoes topped
+              with mushroom herbed gravy, accompanied by mom&apos;s southern
+              green beans.
+            </p>
+            <p className="text-lg text-red-600 mt-4 font-bold">
+              Every bite will comfort you just like mom&apos;s cooking did!
+            </p>
+            <p className="mt-4">
+              <b>Directions:</b>
+              Thaw. Bake covered at 350 degrees until warm about 25 minutes or
+              until warm.
+            </p>
+            <p className="text-lg text-red-600 mt-4 font-bold">
+              Only quality ingredients!!!!
+            </p>
+            <p className="mt-2">
+              Local beef, hand smashed wholesome chunky potatoes, rich green
+              beans made from fresh produce (not canned), creamy gravy made from
+              scratch (no packets or additives). All hand made using the
+              &quot;long cuts&quot; not the short cuts.
+            </p>
+          </div>
+        </div>
+        <div className="bg-white lg:bg-lime-800">
+          <div className="p-24 bg-white lg:rounded-r-[160px] lg:h-full">
+            <h2
+              className={`text-3xl text-red-900 font-semibold ${edu_vic_wa_nt_beginner.className}`}
+            >
+              Signora Rizzo’s Spanakopita
+            </h2>
+            <p className="text-lg mt-4 font-bold">
+              Layers of crispy phyllo filled with a creamy, gooey, herby spinach
+              and feta center. If you love Greek and Italian food, dive right
+              in!
+            </p>
+            <p className="mt-4">
+              <b>Directions:</b>
+              Thaw. Bake uncovered at 375 degrees for 45 minutes. Let sit for a
+              few min. before eating.
+            </p>
+            <p className="text-lg text-red-600 mt-4 font-bold">
+              Only quality ingredients!!!!
+            </p>
+            <p className="mt-2">
+              Phyllo pastry, spinach, onion, feta cheese, extra virgin olive
+              oil, cottage cheese, garlic, oregano, all-purpose flour, salt,
+              pepper.
+            </p>
+          </div>
+        </div>
+        <div className="bg-lime-800 p-24 flex items-center justify-center lg:rounded-r-[160px]">
+          <Image
+            src="/spanakopita.png"
+            alt="lasagna"
+            width={450}
+            height={450}
+            className="rounded-lg"
+          />
+        </div>
+        <div className="bg-lime-800 p-24 flex items-center justify-center">
           <AutoplayCarousel
             images={['/kbbq.png', '/cabbage.png', '/rice.png']}
           />
@@ -270,7 +409,7 @@ export default async function Page() {
           </div>
         </div>
         <div className="bg-white lg:bg-lime-800">
-          <div className="p-24 bg-white lg:rounded-tr-[160px] lg:h-full">
+          <div className="p-24 bg-white lg:rounded-r-[160px] lg:h-full">
             <h2
               className={`text-3xl text-red-900 font-semibold ${edu_vic_wa_nt_beginner.className}`}
             >
@@ -292,10 +431,79 @@ export default async function Page() {
             </p>
           </div>
         </div>
-        <div className="bg-lime-800 p-24 flex items-center justify-center lg:rounded-tr-[160px]">
+        <div className="bg-lime-800 p-24 flex items-center justify-center lg:rounded-r-[160px]">
           <div className="max-w-[450px]">
             <Image
               src="/cake.png"
+              alt="lasagna"
+              width={450}
+              height={450}
+              className="rounded-lg"
+            />
+          </div>
+        </div>
+        <div className="bg-lime-800 p-24 flex items-center justify-center">
+          <Image
+            src="/lemonricotta.png"
+            alt="lasagna"
+            width={450}
+            height={450}
+            className="rounded-lg"
+          />
+        </div>
+        <div className="bg-white lg:bg-lime-800">
+          <div className="p-24 bg-white lg:rounded-l-[160px] lg:h-full">
+            <h2
+              className={`text-3xl text-red-900 font-semibold ${edu_vic_wa_nt_beginner.className}`}
+            >
+              Signora Rizzo’s Traditional Lemon Ricotta Cake
+            </h2>
+            <p className="text-lg text-lime-800 mt-4 font-bold">
+              Light, fluffy lemon ricotta cake is full of flavor. Every bite of
+              this old timey, traditional dessert will transport you to the
+              &quot;old country&quot; of Italy!
+            </p>
+            <p className="mt-4">
+              <b>Directions:</b>
+              Store in freezer. Thaw and eat!
+            </p>
+            <p className="text-lg text-red-600 mt-4 font-bold">
+              Only quality ingredients!!!!
+            </p>
+            <p className="mt-2">
+              Ricotta, lemon, flour, eggs, butter, sugar, natural flavors and
+              spices.
+            </p>
+          </div>
+        </div>
+        <div className="bg-white lg:bg-lime-800">
+          <div className="p-24 bg-white lg:rounded-r-[160px] lg:h-full">
+            <h2
+              className={`text-3xl text-red-900 font-semibold ${edu_vic_wa_nt_beginner.className}`}
+            >
+              Signora Rizzo’s Carrot Cake
+            </h2>
+            <p className="text-lg text-lime-800 mt-4 font-bold">
+              Enjoy a family favorite any season of the year. Moist carrot cake
+              lovingly baked with just the right amount of cinnamon and spices
+              and topped with plenty of homemade cream cheese frosting.
+            </p>
+            <p className="mt-4">
+              <b>Directions:</b> Store in freezer. Thaw and eat!
+            </p>
+            <p className="text-lg text-red-600 mt-4 font-bold">
+              Only quality ingredients!!!!
+            </p>
+            <p>
+              Sugar, flour, carrots, eggs, milk, vegetable oil, vanilla, butter,
+              cream cheese, cinnamon, nutmet, salt.
+            </p>
+          </div>
+        </div>
+        <div className="bg-lime-800 p-24 flex items-center justify-center">
+          <div className="max-w-[450px]">
+            <Image
+              src="/carrotcake.png"
               alt="lasagna"
               width={450}
               height={450}
