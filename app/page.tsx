@@ -1,26 +1,26 @@
-import Image from 'next/image';
-import { Edu_VIC_WA_NT_Beginner } from 'next/font/google';
-import { AutoplayCarousel } from '@/components/ui/autoplay-carousel';
+import Image from "next/image";
+import { Edu_VIC_WA_NT_Beginner } from "next/font/google";
+import { AutoplayCarousel } from "@/components/ui/autoplay-carousel";
 
-import Link from 'next/link';
-import { Button } from '@/components/ui/button';
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
 
-const edu_vic_wa_nt_beginner = Edu_VIC_WA_NT_Beginner({ subsets: ['latin'] });
+const edu_vic_wa_nt_beginner = Edu_VIC_WA_NT_Beginner({ subsets: ["latin"] });
 
 const images = [
-  '/IMG_1581.JPEG',
-  '/IMG_1589.JPEG',
-  '/IMG_3417.JPEG',
-  '/IMG_3420.JPEG',
-  '/IMG_3441.JPEG',
-  '/IMG_3442.JPEG',
-  '/IMG_3443.JPEG',
-  '/IMG_3460.JPEG',
-  '/IMG_3494.JPEG',
-  '/IMG_3499.JPEG',
-  '/IMG_3507.JPEG',
-  '/IMG_3514.JPEG',
-  '/IMG_3536.JPEG',
+  "/IMG_1581.JPEG",
+  "/IMG_1589.JPEG",
+  "/IMG_3417.JPEG",
+  "/lasagna.jpeg",
+  "/IMG_3441.JPEG",
+  "/IMG_3442.JPEG",
+  "/IMG_3443.JPEG",
+  "/IMG_3460.JPEG",
+  "/IMG_3494.JPEG",
+  "/IMG_3499.JPEG",
+  "/IMG_3507.JPEG",
+  "/IMG_3514.JPEG",
+  "/IMG_3536.JPEG",
 ];
 
 export default function Home() {
@@ -36,9 +36,30 @@ export default function Home() {
           />
           <div className="flex flex-col items-center lg:items-end justify-center gap-4 mt-6 lg:mt-0">
             <p
-              className={`text-2xl ${edu_vic_wa_nt_beginner.className} text-lime-800 mt-2 text-center font-semibold italic`}
+              className={`text-3xl ${edu_vic_wa_nt_beginner.className} text-lime-800 mt-2 text-center font-semibold italic`}
             >
               Serving delicious takeout in Staunton, Virginia
+            </p>
+            <p
+              className={`text-xl ${edu_vic_wa_nt_beginner.className} mt-2 text-center font-semibold italic`}
+            >
+              Entrees: $15, Meat Side Dishes: $8, Cakes: $5
+            </p>
+            <p
+              className={`text-xl text-red-500 mt-2 text-center font-semibold italic`}
+            >
+              To place an order: text, call, or email me at{" "}
+            </p>
+            <p
+              className={`text-xl text-red-500 text-center font-semibold italic`}
+            >
+              <Link href="tel:5404163450">
+                <span className="underline">(540)-416-3450</span>
+              </Link>{" "}
+              /{" "}
+              <Link href="mailto://kablerizzo@hotmail.com">
+                <span className="underline">kablerizzo@hotmail.com</span>
+              </Link>
             </p>
             <div className="mt-8 flex items-center justify-center">
               <Link href="/menu">
@@ -80,7 +101,7 @@ export default function Home() {
               sharing with others through food.
             </p>
             <p className="mt-4">
-              I plan on keeping this small, so it is{' '}
+              I plan on keeping this small, so it is{" "}
               <span className="font-bold underline">quality</span>. Not
               quantity. Everything I cook is what we put on our table with fresh
               ingredients and always locally sourced meats. There are non-meat
@@ -109,13 +130,13 @@ export default function Home() {
               Kable Rizzo (Signora Rizzo)
             </p>
             <p className="mt-4 flex items-end gap-1">
-              You can text me at{' '}
+              You can text me at{" "}
               <Link href="tel:5404163450">
                 <p className="font-semibold text-lg">(540)-416-3450</p>
               </Link>
             </p>
             <p className="flex items-end gap-1">
-              Or email me at{' '}
+              Or email me at{" "}
               <div className="underline text-blue-600 active:text-purple-600">
                 <Link href="mailto:kablerizzo@hotmail.com">
                   kablerizzo@hotmail.com

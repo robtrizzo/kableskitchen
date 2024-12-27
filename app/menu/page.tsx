@@ -1,14 +1,14 @@
-import type { Metadata } from 'next';
-import Image from 'next/image';
-import { Edu_VIC_WA_NT_Beginner } from 'next/font/google';
-import Link from 'next/link';
-import { AutoplayCarousel } from '@/components/ui/autoplay-carousel';
+import type { Metadata } from "next";
+import Image from "next/image";
+import { Edu_VIC_WA_NT_Beginner } from "next/font/google";
+import Link from "next/link";
+import { AutoplayCarousel } from "@/components/ui/autoplay-carousel";
 
-const edu_vic_wa_nt_beginner = Edu_VIC_WA_NT_Beginner({ subsets: ['latin'] });
+const edu_vic_wa_nt_beginner = Edu_VIC_WA_NT_Beginner({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Menu - Kable's Kitchen",
-  description: 'Home-cooked meals made with love and quality ingredients',
+  description: "Home-cooked meals made with love and quality ingredients",
 };
 
 export default async function Page() {
@@ -26,9 +26,30 @@ export default async function Page() {
           </Link>
           <div className="flex flex-col items-center lg:items-end justify-center gap-4 mt-6 lg:mt-0">
             <p
-              className={`text-2xl ${edu_vic_wa_nt_beginner.className} text-lime-800 mt-2 text-center font-semibold italic`}
+              className={`text-3xl ${edu_vic_wa_nt_beginner.className} text-lime-800 mt-2 text-center font-semibold italic`}
             >
               Serving delicious takeout in Staunton, Virginia
+            </p>
+            <p
+              className={`text-xl ${edu_vic_wa_nt_beginner.className} mt-2 text-center font-semibold italic`}
+            >
+              Entrees: $15, Meat Side Dishes: $8, Cakes: $5
+            </p>
+            <p
+              className={`text-xl text-red-500 mt-2 text-center font-semibold italic`}
+            >
+              To place an order: text, call, or email me at{" "}
+            </p>
+            <p
+              className={`text-xl text-red-500 text-center font-semibold italic`}
+            >
+              <Link href="tel:5404163450">
+                <span className="underline">(540)-416-3450</span>
+              </Link>{" "}
+              /{" "}
+              <Link href="mailto://kablerizzo@hotmail.com">
+                <span className="underline">kablerizzo@hotmail.com</span>
+              </Link>
             </p>
           </div>
         </div>
@@ -37,7 +58,7 @@ export default async function Page() {
         <div className="bg-lime-800 p-24 flex items-center justify-center lg:rounded-tr-[160px]">
           <div className="max-w-[450px]">
             <Image
-              src="/IMG_3420.JPEG"
+              src="/lasagna.jpeg"
               alt="lasagna"
               width={450}
               height={450}
@@ -171,25 +192,14 @@ export default async function Page() {
             <h2
               className={`text-3xl text-red-900 font-semibold ${edu_vic_wa_nt_beginner.className}`}
             >
-              Signora Rizzo’s Cottage Pie
+              Signora Rizzo’s Lentil Cottage Pie
             </h2>
             <p className="text-lg mt-4 font-bold">
               Comforting, hearty cottage pie.
             </p>
-            <p className="mt-4 font-bold">
-              A friend from the UK reminded me that what I was naming
-              “shepherds’ pie” is actually “cottage pie”. Shepherds’ pie is made
-              with lamb, cottage pie with beef.
-            </p>
-            <p className="text-lg mt-4 font-bold">Two options. Choose one:</p>
-            <p className="text-lg text-lime-800 mt-4 font-bold">
-              Traditional: Seasoned beef & healthy vegetables topped with cheesy
-              whipped potatoes
-            </p>
             <p className="text-lg text-lime-800 font-bold">or</p>
             <p className="text-lg text-lime-800 font-bold">
-              Vegetable: Seasoned lentils & healthy vegetables topped with
-              whipped potatoes
+              Seasoned lentils & healthy vegetables topped with whipped potatoes
             </p>
             <p className="mt-4">
               <b>Directions:</b>
@@ -200,14 +210,6 @@ export default async function Page() {
               Only quality ingredients!!!!
             </p>
             <p className="mt-2">
-              <b>Traditional version:</b>
-              Grass fed organic beef, onions, garlic, carrots, celery, peas,
-              garlic, flour, worcestershire sauce, tomato paste, parsley, thyme,
-              bay leaf, chicken broth, potatoes, milk, butter, sharp cheese,
-              salt, pepper.
-            </p>
-            <p>
-              <b>Vegetable version:</b>
               Lentils, carrots, celery, peas, onions, potatoes, garlic, thyme,
               rosemary, tomato paste, red wine, tahini, soy sauce, paprika,
               olive oil, coconut milk, nutritional yeast, balsamic vinegar,
@@ -216,8 +218,12 @@ export default async function Page() {
           </div>
         </div>
         <div className="bg-lime-800 p-24 flex items-center justify-center lg:rounded-r-[160px]">
-          <AutoplayCarousel
-            images={['/cottagepie.png', '/veggiecottagepie.png']}
+          <Image
+            src="/veggiecottagepie.png"
+            alt="lentil cottage pie"
+            width={450}
+            height={450}
+            className="rounded-lg"
           />
         </div>
         <div className="bg-lime-800 p-24 flex items-center justify-center">
@@ -289,7 +295,7 @@ export default async function Page() {
         </div>
         <div className="bg-lime-800 p-24 flex items-center justify-center">
           <AutoplayCarousel
-            images={['/meatloaf.png', '/mash.png', '/greenbeans.png']}
+            images={["/meatloaf.png", "/mash.png", "/greenbeans.png"]}
           />
         </div>
         <div className="bg-white lg:bg-lime-800">
@@ -361,7 +367,7 @@ export default async function Page() {
         </div>
         <div className="bg-lime-800 p-24 flex items-center justify-center">
           <AutoplayCarousel
-            images={['/kbbq.png', '/cabbage.png', '/rice.png']}
+            images={["/kbbq.png", "/cabbage.png", "/rice.png"]}
           />
         </div>
         <div className="bg-white lg:bg-lime-800">
@@ -406,6 +412,107 @@ export default async function Page() {
               Pork, onions, garlic, ginger root, gochujang paste, soy sauce,
               maple syrup, sesame oil, olive oil, green onions, cabbage, rice,
               chili flakes, sriracha, salt, pepper, coriander, peanuts.
+            </p>
+          </div>
+        </div>
+        <div className="bg-white lg:bg-lime-800">
+          <div className="p-24 bg-white lg:rounded-r-[160px] lg:h-full">
+            <h2
+              className={`text-3xl text-red-900 font-semibold ${edu_vic_wa_nt_beginner.className}`}
+            >
+              Signora Rizzo’s Samosa Pie
+            </h2>
+            <p className="text-lg text-lime-800 mt-4 font-bold">
+              Savory and complex Samosa Pie filled with nutritious vegetables or
+              meat and vegetables, aromatic seeds, spices, and topped with a
+              delicious, homemade crust.
+            </p>
+            <p className="text-lg mt-4 font-bold">Two options. Choose one:</p>
+            <p className="text-lg text-lime-800 mt-4 font-bold">
+              Vegetarian/Vegan - made with vegan pie crust &amp; vegetables.
+            </p>
+            <p className="text-lg text-lime-800 mt-4 font-bold">
+              With Chicken - made with a flaky, buttery pie crust &amp;
+              vegetables.
+            </p>
+            <p className="mt-4">
+              <b>Directions:</b> Thaw. Bake uncovered at 400 degrees for about
+              25min. or until warm. Let rest for a few min. before eating.
+            </p>
+            <p className="text-lg text-red-600 mt-4 font-bold">
+              Only quality ingredients!!!!
+            </p>
+            <p>
+              Cauliflower, potatoes, water, chicken (for the meat option),
+              onions, zucchini, peas, carrots, tomatoes, coconut milk, vegan
+              butter, flour, extra virgin olive oil, tomato paste, ginger,
+              garlic, garam marsala, cumin, fennel, mustard seeds, turmeric,
+              curry powder, chili powder, salt, pepper.
+            </p>
+          </div>
+        </div>
+        <div className="bg-lime-800 p-24 flex items-center justify-center lg:rounded-r-[160px]">
+          <div className="max-w-[450px]">
+            <Image
+              src="/samosa.jpg"
+              alt="samosa pie"
+              width={450}
+              height={450}
+              className="rounded-lg"
+            />
+          </div>
+        </div>
+        <div className="bg-lime-800 p-24 flex items-center justify-center">
+          <Image
+            src="/stuffed_squash.jpg"
+            alt="stuffed squash"
+            width={450}
+            height={450}
+            className="rounded-lg"
+          />
+        </div>
+        <div className="bg-white lg:bg-lime-800">
+          <div className="p-24 bg-white lg:rounded-l-[160px] lg:h-full">
+            <h2
+              className={`text-3xl text-red-900 font-semibold ${edu_vic_wa_nt_beginner.className}`}
+            >
+              Signora Rizzo’s Stuffed Squash
+            </h2>
+            <p className="text-lg text-lime-800 mt-4 font-bold">
+              Delicious stuffed squash. Flavorful, healthy, and hearty. Loaded
+              with vegetables, spices, and fresh herbs.
+            </p>
+            <p className="text-lg mt-4 font-bold">Two options. Choose one:</p>
+            <p className="text-lg text-lime-800 mt-4 font-bold">
+              Vegan/Vegetarian option: Stuffed with vegetables, wild rice and
+              spices.
+            </p>
+            <p className="text-lg text-lime-800 mt-4 font-bold">
+              Meat Option: Stuffed with farm sausage, vegetables, wild rice, and
+              spices.
+            </p>
+            <p className="mt-4">
+              <b>Directions:</b> Thaw. Drizzle with a few tsp. of olive oil
+              (optional). Bake covered at 350 degrees for 30 minutes.
+            </p>
+            <p className="text-lg text-red-600 mt-4 font-bold">
+              Only quality ingredients!!!!
+            </p>
+            <p>
+              <b>Vegan/Vegetarian:</b> Butternut and/or acorn squash, water,
+              onion, wild rice (white rice, brown rice, red rice, and wild
+              rice), extra virgin olive oil, parsley, cherries (cherries,
+              sugar), apple cider vinegar (apple cider vinegar, water), walnuts,
+              maple syrup, salt, curry powder (turmeric, red pepper), cinnamon,
+              pepper, cayenne pepper.
+            </p>
+            <p>
+              <b>Meat:</b> Butternut and/or acorn squash, sausage, water, onion,
+              wild rice (white rice, brown rice, red rice, and wild rice), extra
+              virgin olive oil, parsley, cherries (cherries, sugar), apple cider
+              vinegar (apple cider vinegar, water), walnuts, maple syrup, salt,
+              curry powder (turmeric, red pepper), cinnamon, pepper, cayenne
+              pepper.
             </p>
           </div>
         </div>
@@ -460,7 +567,7 @@ export default async function Page() {
               Signora Rizzo’s Traditional Lemon Ricotta Cake
             </h2>
             <p className="text-lg text-lime-800 mt-4 font-bold">
-              Light, fluffy lemon ricotta cake is full of flavor. Every bite of
+              Traditional, lemon ricotta cake is full of flavor. Every bite of
               this old timey, traditional dessert will transport you to the
               &quot;old country&quot; of Italy!
             </p>
@@ -510,6 +617,38 @@ export default async function Page() {
               height={450}
               className="rounded-lg"
             />
+          </div>
+        </div>
+        <div className="bg-lime-800 p-24 flex items-center justify-center">
+          <Image
+            src="/devil_lemon.jpg"
+            alt="devil lemon cake"
+            width={450}
+            height={450}
+            className="rounded-lg"
+          />
+        </div>
+        <div className="bg-white lg:bg-lime-800">
+          <div className="p-24 bg-white lg:rounded-l-[160px] lg:h-full">
+            <h2
+              className={`text-3xl text-red-900 font-semibold ${edu_vic_wa_nt_beginner.className}`}
+            >
+              Signora Rizzo’s Devil and Lemon Cake
+            </h2>
+            <p className="text-lg text-lime-800 mt-4 font-bold">
+              Moist, American, devil&apos;s food cake meets Italian, lemon
+              buttercream frosting. An unusual combination that really works!
+            </p>
+            <p className="mt-4">
+              <b>Directions:</b> Store in freezer. Thaw and eat!
+            </p>
+            <p className="text-lg text-red-600 mt-4 font-bold">
+              Only quality ingredients!!!!
+            </p>
+            <p className="mt-2">
+              Sugar, flour, butter, milk, eggs, cocoa, lemon, vegetable oil,
+              vanilla, baking soda, baking powder, salt.
+            </p>
           </div>
         </div>
       </div>
