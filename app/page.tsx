@@ -43,7 +43,7 @@ export default function Home() {
             <p
               className={`text-xl ${edu_vic_wa_nt_beginner.className} mt-2 text-center font-semibold italic`}
             >
-              Entrees: $15, Meat Side Dishes: $8, Cakes: $5
+              Entrees: $16, Meat Side Dishes: $9, Cakes: $6
             </p>
             <p
               className={`text-xl text-red-500 mt-2 text-center font-semibold italic`}
